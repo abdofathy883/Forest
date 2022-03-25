@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+}
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,700;1,500;1,700;1,900&display=swap');
+section{
+    width: 100%;
+    min-height: 100vh;
+}
+header, .home{
+    background-image: url(imgs/bg3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* Header */
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 120px;
+}
+nav{
+    padding-right: 100px;
+}
+nav a{
+    margin-left: 70px;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 3px 10px;
+    transition: 0.5s ease-in;
+}
+nav a:hover{
+    background-color: white;
+    color: gray;
+}
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+}
+/* Tablets */
+@media (max-width: 900px){
+    header{
+        padding: 20px 80px;
+    }
+    nav{
+        padding-right: 50px;
+    }
+    nav a{
+        padding: 3px 10px;
+        margin-left: 20px;
+    }
+}
+/* Mobile First */
+@media (max-width: 600px){
+    header{
+        padding: 20px 30px;
+    }
+    .logo{
+        font-size: 17px;
+    }
+    nav{
+        padding-right: 20px;
+    }
+    nav a{
+        font-size: 12px;
+    }
+}
+@media (max-width: 400px){
+    header{
+        padding: 10px;
+    }
+    .logo{
+        font-size: 15px;
+    }
+    nav{
+        padding-right: 10px;
+    }
+    nav a{
+        font-size: 10px;
+        padding: 2px 5px;
+        margin-left: 10px;
+    }
+}
+/* Home */
+.home{
+    display: flex;
+    justify-content: space-between;
+}
+.intro{
+    letter-spacing: 1.5px;
+    padding: 0 115px;
+    font-size: 40px;
+    font-family: 'Work Sans';
+}
+h1{
+    padding-top: 200px;
+    padding-bottom: 20px;
+    padding-right: 150px;
+    font-size: 50px;
+}
+.book{
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 10px 20px;
+    transition: 0.5s ease-in;
+}
+.book:hover{
+    background-color: white;
+    color: gray;
+}
+/* Tablets */
+@media (max-width: 780px){
+    h1{
+        font-size: 35px;
+        padding-right: 50px;
+    }
+}
+/* Mobile First */
+@media (max-width: 600px){
+    .intro{
+        letter-spacing: 1px;
+        padding: 10px 30px;
+        font-size: 15px;
+    }
+    h1{
+        padding-bottom: 20px;
+        padding-right: 50px;
+        font-size: 15px;
+    }
+    .book{
+        padding: 10px 20px;
+    }
+    .home-check{
+        padding-bottom: 400px;
+    }
+}
+
+/* Locations */
+.locations{
+    background-image: url(imgs/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.links{
+    padding: 30px 120px;
+}
+.location-link{
+    font-weight: bold;
+    margin-right: 40px;
+    font-size: 25px;
+}
+.location-link:hover{
+    border-bottom: 5px solid dodgerblue;
+}
+.feature{
+    padding-left: 120px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.poly-img{
+    height: 200px;
+    width: 180px;
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+}
+.img-4{
+    padding-left: 90px;
+    top: -50px;
+}
+.img-5{
+    top: -50px;
+}
+.img-6{
+    padding-left: 180px;
+    top: -100px;
+}
+.img-container{
+    display: inline-block;
+    position: relative;
+}
+.imgs-container{
+    margin: 0px 300px;
+}
+.text-block{
+    position: absolute;
+    top: 80px;
+}
+.text-block p{
+    text-align: center;
+    padding-bottom: 15px;
+    padding-left: 25px;
+}
+.text-block .book{
+    padding: 5px 10px;
+    margin-left: 45px;
+}
+@media (max-width: 1150px){
+    .imgs-container{
+        margin: 0 200px;
+    }
+}
+@media (max-width: 950px){
+    .imgs-container{
+        margin: 0 150px;
+    }
+}
+@media (max-width: 850px){
+    .poly-img{
+        height: 180px;
+        width: 160px;
+    }
+    .text-block{
+        top: 65px;
+    }
+    .text-block p{
+        padding-left: 15px;
+    }
+    .text-block .book{
+        margin-left: 35px;
+    }
+    .img-4{
+        padding-left: 82px;
+        top: -42px;
+    }
+    .img-5{
+        top: -42px;
+    }
+    .img-6{
+        padding-left: 165px;
+        top: -85px;
+    }
+}
+/* Tablets */
+@media (max-width: 790px){
+    .feature{
+        font-size: 25px;
+    }
+    .imgs-container{
+        margin: 0 100px;
+    }
+    .img-4{
+        padding-left: 85px;
+        top: -45px;
+    }
+    .img-5{
+        top: -45px;
+    }
+    .img-6{
+        padding-left: 170px;
+        top: -90px;
+    }
+}
+/* Mobile First */
+@media (max-width: 690px){
+    .links{
+        padding: 20px 80px;
+    }
+    .location-link{
+        margin-right: 50px;
+        font-size: 20px;
+    }
+    .feature{
+        padding-left: 80px;
+        padding-bottom: 20px;
+    }
+    .imgs-container{
+        margin: 0px 100px;
+    }
+    .poly-img{
+        height: 150px;
+        width: 140px;
+    }
+    .text-block{
+        top: 40px;
+    }
+    .text-block p{
+        padding-bottom: 15px;
+        padding-left: 12px;
+        font-size: 14px;
+    }
+    .text-block .book{
+        padding: 4px 7px;
+        margin-left: 30px;
+    }
+    .img-3{
+        padding-left: 70px;
+        top: -35px;
+    }
+    .img-4{
+        padding-left: 0px;
+        top: -70px;
+    }
+    .img-5{
+        top: -65px;
+    }
+    .img-6{
+        padding-left: 65px;
+        top: -100px;
+    }
+    .text-block{
+        top: 40px;
+    }
+    .text-block p{
+        padding-bottom: 15px;
+        padding-left: 5px;
+        font-size: 14px;
+    }
+    .text-block .book{
+        padding: 2px 4px;
+        margin-left: 25px;
+    }
+    .location-link{
+        font-size: 15px;
+    }
+    .links{
+        padding: 10px 50px;
+    }
+    .feature{
+        font-size: 20px;
+    }
+}
+@media (max-width: 490px){
+    .poly-img{
+        height: 135px;
+        width: 125px;
+    }
+    .imgs-container{
+        margin: 0 50px;
+    }
+}
+@media(max-width: 390px){
+    .links{
+        padding: 10px 20px;
+    }
+    .feature{
+        font-size: 15px;
+        padding-left: 20px;
+    }
+    .imgs-container{
+        margin: 0 10px;
+    }
+}
+
+/* Testimonials */
+.testimonial{
+    background-image: url(imgs/poly1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h2, h4, .lorem{
+    text-align: center;
+}
+h2{
+    padding-top: 30px;
+    font-size: 35px;
+}
+h4{
+    color: dodgerblue;
+    font-size: 20px;
+    padding-top: 25px;
+}
+.testimony-intro{
+    letter-spacing: -0.5px;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+.testimony-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 150px;
+    margin: 0 40px;
+}
+.icon{
+    font-size: 50px;
+    padding-left: 130px;
+}
+/* Mobile First */
+@media (max-width: 1100px){
+    .testimony-container{
+        flex-wrap: wrap;
+    }
+} 
+@media (max-width: 685px){
+    .testimony-container{
+        padding-top: 50px;
+    }
+}
+@media (max-width: 380px){
+    .icon{
+        padding-left: 100px;
+    }
+}
+
+/* Contact */
+.contact{
+    min-height: 25vh;
+    background-image: url(imgs/bg6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact-division{
+    display: flex;
+}
+.social-icon{
+    padding-left: 25px;
+    font-size: 20px;
+}
+h6{
+    padding-bottom: 15px;
+    font-size: 12px;
+}
+.contact-card{
+    padding-right: 60px;
+}
+/* Mobile First */
+@media (max-width: 800px){
+    .contact{
+        flex-wrap: wrap;
+        min-height: 20vh;
+    }
+    .contact-division{
+        margin-left: 40px;
+    }
+    .contact-p{
+        font-size: 10px;
+    }
+    .social-icons{
+        margin-right: 55px;
+    }
+} 
+@media (max-width: 350px){
+    .v-small{
+        font-size: 7px;
+    }
+} 
